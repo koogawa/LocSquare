@@ -59,6 +59,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		219C39BC17914C5B00F19A76 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		219C39BD17914C6C00F19A76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		219C39BE17914C7A00F19A76 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		21BA44C1175A564400463A40 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +111,9 @@
 		21BA44D3175A564500463A40 /* LocSquare */ = {
 			isa = PBXGroup;
 			children = (
+				219C39BD17914C6C00F19A76 /* Model */,
+				219C39BE17914C7A00F19A76 /* View */,
+				219C39BC17914C5B00F19A76 /* Controller */,
 				21BA44DC175A564500463A40 /* LSAppDelegate.h */,
 				21BA44DD175A564500463A40 /* LSAppDelegate.m */,
 				21BA44E5175A564500463A40 /* LSViewController.h */,

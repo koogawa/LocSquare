@@ -13,9 +13,34 @@
     #import <Foundation/Foundation.h>
 #endif
 
+#define FSQ_CLIENT_ID		@""
+#define FSQ_CLIENT_SECRET	@""
+#define FSQ_API_VERSION     @""
+#define FSQ_CALLBACK_URL    @"http://localhost/"
+#define FSQ_AUTH_URI_FORMAT @"https://foursquare.com/oauth2/authenticate?client_id=%@&response_type=token&redirect_uri=%@"
+
+#define LOC_CLIENT_ID		@""
+#define LOC_CLIENT_SECRET	@""
+
+#define CACHE_RETENTION_DAY 30
+#define CACHE_REMOVED_KEY   @"CACHE_REMOVED"
+
+#define STATUS_BAR_HEIGHT	20.0f
+#define NAVI_VAR_HEIGHT     44.0f
+#define TAB_BAR_HEIGHT		49.0f
+#define FAVORITE_VENUE_MAX  50
+
 // 色
 // ex) UIColorFromRGB(0x00FF00);
 #define UIColorFromRGB(rgbValue) [UIColor \
 colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0f \
 green:((float)((rgbValue & 0xFF00) >> 8))/255.0f \
 blue:((float)(rgbValue & 0xFF))/255.0f alpha:1.0f]
+
+#ifdef DEBUG
+# define LOG(...) NSLog(__VA_ARGS__)
+# define LOG_CURRENT_METHOD NSLog(@"%s", __func__)
+#else
+# define LOG(...) ;
+# define LOG_CURRENT_METHOD ;
+#endif
