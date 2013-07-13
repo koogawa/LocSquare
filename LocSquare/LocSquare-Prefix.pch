@@ -1,0 +1,21 @@
+//
+// Prefix header for all source files of the 'LocSquare' target in the 'LocSquare' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+// 色
+// ex) UIColorFromRGB(0x00FF00);
+#define UIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0f \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0f \
+blue:((float)(rgbValue & 0xFF))/255.0f alpha:1.0f]
